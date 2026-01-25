@@ -1,14 +1,14 @@
-o	# Program Name: Assignment1.py
-o	# Course: IT3883/Section 01
-o	# Student Name: Mina Bayramoglu
-o	# Assignment Number: Lab1
-o	# Due Date: 1/24/2026
-o	# Purpose: Menu that displays or clears input provided in order to demonstrate input buffer
-o	# Resources : https://agirlamonggeeks.com/how-to-make-menu-in-python/ https://www.geeksforgeeks.org/compiler-design/input-buffering-in-compiler-design/
+# Program Name: Assignment1.py
+	# Course: IT3883/Section 01
+	# Student Name: Mina Bayramoglu
+	# Assignment Number: Lab1
+    # Due Date: 1/24/2026
+	# Purpose: Menu that displays or clears input provided in order to demonstrate input buffer
+	# Resources : https://agirlamonggeeks.com/how-to-make-menu-in-python/ https://www.geeksforgeeks.org/compiler-design/input-buffering-in-compiler-design/
 
 def main():
-    input = ""  #stores input
-
+    user_input = ""  # stores input
+#menu
     while True:
         print("Menu")
         print("1. Append data to the input buffer")
@@ -18,28 +18,30 @@ def main():
 
         choice = input("Enter your choice (1-4): ")
 
-        if choice == "Option 1":
+        if choice == "1":
             new_data = input("Enter a string to append: ")
-            input += new_data
+            user_input += new_data #adds new string to input buffer
             print("Data appended successfully.")
 
-        elif choice == "Option 2":
-            input = ""
+        elif choice == "2":
+            user_input = "" #clears input
             print("Input buffer cleared.")
 
-        elif choice == "Option 3":
-            if input:
-                print("Current input buffer:")
-                print(input)
+        elif choice == "3":
+            if user_input:
+                print("Current input:")
+                print(user_input) #displays input buffer
             else:
-                print("Input is empty")
+                print("Input is empty.")
 
-        elif choice == "Option 4":
+        elif choice == "4":
             print("Exiting program")
-            break
+            break #exits program
 
         else:
-            print("Error Please enter a number from 1 to 4.")
+            print("Invalid choice. Please enter a number from 1 to 4.") #error code if user inputs option other than 1-4
 
 if __name__ == "__main__":
     main()
+
+
