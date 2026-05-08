@@ -41,11 +41,11 @@ for i in dividedString:
             numQuarter = characters[1]
         numQuarter = float(numQuarter)
     counter +=1 #adds one to counter after it loops the first time
-    #calculating totals
-    penny = 0.01 * numPenny
-    nickel = 0.05 * numNickel
-    dime = 0.1 * numDime
-    quarter = 0.25 * numQuarter
+#calculating totals
+penny = 0.01 * numPenny
+nickel = 0.05 * numNickel
+dime = 0.1 * numDime
+quarter = 0.25 * numQuarter
 
-    Total = penny + nickel + dime + quarter
-    print(round(Total,2))
+Total = penny + nickel + dime + quarter
+print(round(Total,2))
